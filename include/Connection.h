@@ -30,6 +30,6 @@ public:
     clock_t getAliveTime() const {return clock()-aliveTime_;}
 private:
     MYSQL *conn_;//表示和mysql server的一条连接
-    clock_t aliveTime_;//记录进入空闲状态后的存货时间
+    clock_t aliveTime_;//记录进入空闲状态后的存活时间
 };
 #endif
